@@ -136,69 +136,57 @@
 	    </div>
 	  </nav>
 	  <section id="home-section" class="hero">
-		  <div class="home-slider  owl-carousel">
-	       <div class="slider-item ">
-	      	<div class="overlay"></div>
-	         <div class="container">
-	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
-	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/bg_11.png);">
-	          	 <div class="overlay"></div>
-	          	</div>
-		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '80%' }">
-		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Manikanta Vattem</span></h1>
-
-						<!-- Element to contain animated typing -->
-						<span id="typing-animation"></span>
-
-						<script>
-
-						// Initialize the typing animation
-						const typingAnimationElement = document.getElementById('typing-animation');
-
-						// Create an array of typing text
-						const typingTexts = [
-						'Bigdata Engineer  ',
-						'Data Engineer  ',
-						'Software Developer   ',
-						];
-
-						// Create a function to display the typing animation for a given text
-						function playTypingAnimation(text) {
-						// Loop through each character and add it to the element
-						for (let i = 0; i < text.length; i++) {
-							setTimeout(() => {
-							typingAnimationElement.textContent += text[i];
-							}, i * 200); // Increase the delay to slow down the typing animation
-						}
-
-						// Once the animation is complete, reset the text and start over
+		<div class="home-slider owl-carousel">
+		  <div class="slider-item">
+			<div class="overlay"></div>
+			<div class="container">
+			  <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+				  <span class="subheading">Hello!</span>
+				  <h1 class="mb-4 mt-3" style="white-space: nowrap;">I'm <span>Manikanta Vattem</span></h1>
+	  
+				  <!-- Element to contain animated typing -->
+				  <span id="typing-animation"></span>
+	  
+				  <script>
+					// Initialize the typing animation
+					const typingAnimationElement = document.getElementById('typing-animation');
+	  
+					// Create an array of typing text
+					const typingTexts = ['Bigdata Engineer', 'Data Engineer', 'Software Developer'];
+	  
+					function playTypingAnimation(text) {
+					  for (let i = 0; i < text.length; i++) {
 						setTimeout(() => {
-							typingAnimationElement.textContent = '';
-							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-						}, text.length * 200);
-						}
-
-						// Start the typing animation loop
-						playTypingAnimation(typingTexts[0]);
-
-						</script>
-
-						<br>
-						<br>
-			            <h2>A Bigdata Engineer</h2>
-						<h2 class="d-flex" style="margin-bottom: 0">With 6 years of experience</h2>
-						<br>
-			            <p><a href="https://www.linkedin.com/in/manikantavattem" class="btn btn-primary py-3 px-4">LinkedIn</a> 
-							<a href="https://github.com/manikantavattem" class="btn btn-white btn-outline-white py-3 px-4">My works</a></p>
-		            </div>
-		          </div>
-	        	</div>
-	        </div>
-	      </div>
+						  typingAnimationElement.textContent += text[i];
+						}, i * 200);
+					  }
+	  
+					  setTimeout(() => {
+						typingAnimationElement.textContent = '';
+						playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+					  }, text.length * 200);
+					}
+	  
+					// Start the typing animation loop
+					playTypingAnimation(typingTexts[0]);
+				  </script>
+	  
+				  <br><br>
+				  <h2 class="text-center">Bigdata Engineer</h2>
+				  <h2 class="text-center">With 6 years of experience</h2>
+				  <br>
+				  <p>
+					<a href="https:www.linkedin.com/in/manikantavattem" class="btn btn-primary py-3 px-4">LinkedIn</a>
+					<a href="https://github.com/manikantavattem" class="btn btn-white btn-outline-white py-3 px-4">My works</a>
+				  </p>
+				</div>
+			  </div>
+			</div>
+		  </div>
 		</div>
-    </section>
+	  </section>
+	  
 
 
 
@@ -282,7 +270,7 @@
 									<li class="d-flex"><span>Domain:</span> <span>Retail, Tours, Travels and Hospitality</span></li>
 									<li class="d-flex"><span>Education:</span> <span>Master of Engineering</span></li>
 									<li class="d-flex"><span>Language:</span> <span>English</span></li>
-									<li class="d-flex"><span>Programming Languages:</span> <span> Python, Scala, PySpark, Spark, Perl, C++, Java, C, Spring MVC, and Shell Scripting</span></li>
+									<li class="d-flex"><span>Programming Lang:</span> <span> Python, Scala, PySpark, Spark, Perl, C++, Java, C, Spring MVC, and Shell Scripting</span></li>
 									<li class="d-flex"><span>Web Development:</span> <span>JavaScript, Ext JS React, Angular, CSS and HTML</span></li>
 									<li class="d-flex"><span>Technologies:</span> <span>Amazon Web Services (S3, EMR, Athena, EC2, ECS Fargate, ECR, Glue, Step Functions, Load 
 										Balancer), Azure, GCP, Databricks, Bigdata, Hadoop, Map Reduce, Sqoop, Docker, Hive and Git</span></li>
